@@ -133,9 +133,9 @@ extension Coordinator where Self: AnyObject {
     public func performTransition(_ transition: TransitionType,
                                   with options: TransitionOptions,
                                   completion: PresentationHandler? = nil) {
-        transition.presentables.forEach(addChild)
         transition.perform(on: rootViewController, with: options) {
             completion?()
+            transition.presentables.forEach(self.addChild)
             self.removeChildrenIfNeeded()
         }
     }
