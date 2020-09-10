@@ -500,7 +500,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nswift package update\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/bin/xcrun --sdk macosx swift package update\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
