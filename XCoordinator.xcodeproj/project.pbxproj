@@ -21,7 +21,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		F9B960022465490100CE881E /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9B960012465490100CE881E /* RxSwift.framework */; };
 		OBJ_407 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Animation.swift */; };
 		OBJ_408 /* AnyCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* AnyCoordinator.swift */; };
 		OBJ_409 /* AnyTransitionPerformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* AnyTransitionPerformer.swift */; };
@@ -70,39 +69,22 @@
 		OBJ_458 /* Router+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* Router+Combine.swift */; };
 		OBJ_460 /* XCoordinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "XCoordinator::XCoordinator::Product" /* XCoordinator.framework */; };
 		OBJ_467 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_479 /* Router+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* Router+Rx.swift */; };
-		OBJ_482 /* XCoordinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "XCoordinator::XCoordinator::Product" /* XCoordinator.framework */; };
 		OBJ_489 /* AnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* AnimationTests.swift */; };
 		OBJ_490 /* TestAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* TestAnimation.swift */; };
 		OBJ_491 /* TestRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* TestRoute.swift */; };
 		OBJ_492 /* TransitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* TransitionTests.swift */; };
 		OBJ_493 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* XCTestManifests.swift */; };
 		OBJ_494 /* XCText+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* XCText+Extras.swift */; };
-		OBJ_496 /* XCoordinatorRx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "XCoordinator::XCoordinatorRx::Product" /* XCoordinatorRx.framework */; };
 		OBJ_498 /* XCoordinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "XCoordinator::XCoordinator::Product" /* XCoordinator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9BC82EB8233D8CD000C604A8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "XCoordinator::XCoordinator";
-			remoteInfo = XCoordinator;
-		};
 		9BC82EB9233D8CD000C604A8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "XCoordinator::XCoordinator";
 			remoteInfo = XCoordinator;
-		};
-		9BC82EBA233D8CD100C604A8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "XCoordinator::XCoordinatorRx";
-			remoteInfo = XCoordinatorRx;
 		};
 		9BC82EBC233D8CD100C604A8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -185,7 +167,6 @@
 		OBJ_9 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		"XCoordinator::XCoordinator::Product" /* XCoordinator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XCoordinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"XCoordinator::XCoordinatorCombine::Product" /* XCoordinatorCombine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XCoordinatorCombine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"XCoordinator::XCoordinatorRx::Product" /* XCoordinatorRx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = XCoordinatorRx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"XCoordinator::XCoordinatorTests::Product" /* XCoordinatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = XCoordinatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -205,20 +186,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_480 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				F9B960022465490100CE881E /* RxSwift.framework in Frameworks */,
-				OBJ_482 /* XCoordinator.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		OBJ_495 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_496 /* XCoordinatorRx.framework in Frameworks */,
 				OBJ_498 /* XCoordinator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,7 +209,6 @@
 			isa = PBXGroup;
 			children = (
 				"XCoordinator::XCoordinator::Product" /* XCoordinator.framework */,
-				"XCoordinator::XCoordinatorRx::Product" /* XCoordinatorRx.framework */,
 				"XCoordinator::XCoordinatorCombine::Product" /* XCoordinatorCombine.framework */,
 				"XCoordinator::XCoordinatorTests::Product" /* XCoordinatorTests.xctest */,
 			);
@@ -417,23 +387,6 @@
 			productReference = "XCoordinator::XCoordinatorCombine::Product" /* XCoordinatorCombine.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		"XCoordinator::XCoordinatorRx" /* XCoordinatorRx */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_475 /* Build configuration list for PBXNativeTarget "XCoordinatorRx" */;
-			buildPhases = (
-				OBJ_478 /* Sources */,
-				OBJ_480 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				OBJ_484 /* PBXTargetDependency */,
-			);
-			name = XCoordinatorRx;
-			productName = XCoordinatorRx;
-			productReference = "XCoordinator::XCoordinatorRx::Product" /* XCoordinatorRx.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		"XCoordinator::XCoordinatorTests" /* XCoordinatorTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_485 /* Build configuration list for PBXNativeTarget "XCoordinatorTests" */;
@@ -444,7 +397,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_499 /* PBXTargetDependency */,
 				OBJ_501 /* PBXTargetDependency */,
 			);
 			name = XCoordinatorTests;
@@ -478,7 +430,6 @@
 				"XCoordinator::XCoordinatorCombine" /* XCoordinatorCombine */,
 				"XCoordinator::SwiftPMPackageDescription" /* XCoordinatorPackageDescription */,
 				"XCoordinator::XCoordinatorPackageTests::ProductTarget" /* XCoordinatorPackageTests */,
-				"XCoordinator::XCoordinatorRx" /* XCoordinatorRx */,
 				"XCoordinator::XCoordinatorTests" /* XCoordinatorTests */,
 			);
 		};
@@ -573,14 +524,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_478 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_479 /* Router+Rx.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		OBJ_488 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
@@ -606,16 +549,6 @@
 			isa = PBXTargetDependency;
 			target = "XCoordinator::XCoordinatorTests" /* XCoordinatorTests */;
 			targetProxy = 9BC82EBD233D8CD100C604A8 /* PBXContainerItemProxy */;
-		};
-		OBJ_484 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "XCoordinator::XCoordinator" /* XCoordinator */;
-			targetProxy = 9BC82EB8233D8CD000C604A8 /* PBXContainerItemProxy */;
-		};
-		OBJ_499 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "XCoordinator::XCoordinatorRx" /* XCoordinatorRx */;
-			targetProxy = 9BC82EBA233D8CD100C604A8 /* PBXContainerItemProxy */;
 		};
 		OBJ_501 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -871,64 +804,6 @@
 			};
 			name = Release;
 		};
-		OBJ_476 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = XCoordinator.xcodeproj/XCoordinatorRx_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = XCoordinatorRx;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = XCoordinatorRx;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		OBJ_477 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = XCoordinator.xcodeproj/XCoordinatorRx_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = XCoordinatorRx;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = XCoordinatorRx;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
 		OBJ_486 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1023,15 +898,6 @@
 			buildConfigurations = (
 				OBJ_470 /* Debug */,
 				OBJ_471 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_475 /* Build configuration list for PBXNativeTarget "XCoordinatorRx" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_476 /* Debug */,
-				OBJ_477 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
