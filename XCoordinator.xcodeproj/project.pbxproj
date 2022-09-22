@@ -165,8 +165,8 @@
 		OBJ_65 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_66 /* XCText+Extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCText+Extras.swift"; sourceTree = "<group>"; };
 		OBJ_9 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
-		"XCoordinator::XCoordinator::Product" /* XCoordinator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XCoordinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"XCoordinator::XCoordinatorCombine::Product" /* XCoordinatorCombine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XCoordinatorCombine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"XCoordinator::XCoordinator::Product" /* XCoordinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = XCoordinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"XCoordinator::XCoordinatorCombine::Product" /* XCoordinatorCombine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = XCoordinatorCombine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"XCoordinator::XCoordinatorTests::Product" /* XCoordinatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = XCoordinatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -600,6 +600,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
@@ -651,6 +652,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -682,8 +684,12 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator watchos watchsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,3,4";
 				TARGET_NAME = XCoordinator;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
@@ -710,8 +716,12 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator watchos watchsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,3,4";
 				TARGET_NAME = XCoordinator;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
@@ -738,8 +748,12 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator watchos watchsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,3,4";
 				TARGET_NAME = XCoordinatorCombine;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
@@ -766,8 +780,12 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator watchos watchsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,3,4";
 				TARGET_NAME = XCoordinatorCombine;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
@@ -779,7 +797,11 @@
 			buildSettings = {
 				LD = /usr/bin/true;
 				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator watchos watchsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,3,4";
 			};
 			name = Debug;
 		};
@@ -788,7 +810,11 @@
 			buildSettings = {
 				LD = /usr/bin/true;
 				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator watchos watchsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,3,4";
 			};
 			name = Release;
 		};
@@ -821,8 +847,12 @@
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator watchos watchsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,3,4";
 				TARGET_NAME = XCoordinatorTests;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
@@ -846,8 +876,12 @@
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator watchos watchsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,3,4";
 				TARGET_NAME = XCoordinatorTests;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
